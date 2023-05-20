@@ -1,0 +1,9 @@
+2, 2, 1
+0, 1
+a, b
+0
+1
+delta(0, a) = 1
+delta(0, b) = 1
+delta(1, a) = 0
+delta(1, b) = 0
