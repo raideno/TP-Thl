@@ -5,7 +5,23 @@
 
 #include <string.h>
 
-Automate *construireAutomate(const char *fichier)
+char *expression(Automate *automate)
+{
+    printf("expression: \n");
+    return NULL;
+}
+
+Automate *construireAutomateAPartirDExpression(const char *expression)
+{
+    Automate *automate = (Automate *)malloc(sizeof(automate));
+
+    if (automate != NULL)
+        return NULL;
+
+    return automate;
+}
+
+Automate *construireAutomateAPartirDeFichier(const char *fichier)
 {
     int *Etats, *EtatsFinaux;
 
@@ -46,6 +62,8 @@ Automate *construireAutomate(const char *fichier)
     char Symbole;
     while (EOF != fscanf(file, "delta(%d, %c) = %d\n", &Source, &Symbole, &Destination))
     {
+
+        // printf("delta(%d, %c) = %d\n", Source, Symbole, Destination);
         Etat *etat = automate->etats[Source];
 
         Transition *transition = construireTransition(Source, Symbole, Destination);
@@ -74,7 +92,7 @@ bool estDeterministe(Automate *automate)
         Etat *etat = automate->etats[i];
 
         int j = 0;
-        char array[10];
+        char array[256];
 
         List *transitionList = etat->transitions;
 

@@ -43,7 +43,11 @@ struct Transition
     int destination;
 };
 
-Automate *construireAutomate(const char *fichier);
+char *expression(Automate *automate);
+
+Automate *construireAutomateAPartirDExpression(const char *expression);
+Automate *construireAutomateAPartirDeFichier(const char *fichier);
+
 bool estDeterministe(Automate *automate);
 Etat *parcours(Automate *automate, Etat *etatAcutel, char symbole);
 bool test(Automate *automate, const char *mot);

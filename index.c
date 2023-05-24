@@ -14,7 +14,7 @@ int main()
     printf("[automate]: nom du fichier: ");
     scanf("%s", nomfichier);
 
-    Automate *automate = construireAutomate(nomfichier);
+    Automate *automate = construireAutomateAPartirDeFichier(nomfichier);
 
     if (automate == NULL)
     {

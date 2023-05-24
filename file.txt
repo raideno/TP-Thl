@@ -1,0 +1,19 @@
+Pour ce projet nous avons choisi d'implementer un automate qui reconnait tout les nombres dans R
+[description de l'automate]
+=> en mode mathematique
+=> en mode matrice
+=> descirptions a quoi sert chaque etat
+
+[image automate]
+
+[fichier d'entrée]
+=> dire que nous avons ajouté un ligne avec des mots pour tester l'automate directement apres l'avoir contruit
+
+[structure de donées]
+=> dire que nous avons allouer tout dynamicement et que nous avons utiliser des entiers au lieu de chars pour les noms
+=> montrer les structures de données de facons visuels et en mode code
+
+[capture d'ecran]
+=>
+
+petit debried + liens vers le code
