@@ -1,0 +1,11 @@
+3 2 2
+E = {e0, e1, ep}
+ = {a, b}
+état initial = e0
+F = { e0, e1}
+delta(e0, a) = e0
+delta(e0, b) = e1
+delta(e1, a) = ep
+delta(e1, b) = e1
+delta(ep, a) = ep
+delta(ep, b) = ep
